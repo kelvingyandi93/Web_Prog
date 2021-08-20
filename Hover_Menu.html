@@ -1,0 +1,52 @@
+<html>
+    <title>
+        this is hover menu
+    </title>
+    <style>
+        .menu {
+  background-color: black;
+  color: white;
+  padding: none;
+  font-size: 16px;
+  border: none;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content p {
+    padding: 12px 16px;
+    color: black;
+    display: block;
+    text-decoration: none;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:aqua;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.menu:hover .dropdown-content {display: block;}
+
+.menu:hover .dropmenu {background-color: pink;}
+    </style>
+    <body>
+        <div class="menu">
+            <button class="dropmenu">Dropdown</button>
+            <div class="dropdown-content">
+                <p>text a</p>
+                <p>text a</p>
+                <p>text a</p>
+            </div>
+        </div>
+    </body>   
+</html>
